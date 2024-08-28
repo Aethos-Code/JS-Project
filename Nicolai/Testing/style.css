@@ -1,0 +1,19 @@
+body {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+#carousel {
+  background-color: pink;
+  height: 500px;
+  width: 500px;
+}
+
+body svg {
+  background-color: black;
+}
+
