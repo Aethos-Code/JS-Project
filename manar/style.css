@@ -1,0 +1,45 @@
+
+body {
+    font: 'open sans';
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c555a;
+    color:  white;
+    border-radius: 5px;
+    width: 100px;
+}
+.menu-punkter {
+    list-style-type: none;
+}
+
+.menupunkter.show {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menupunkter li {
+    padding: 30px;
+    background-color: #3c555a;
+    list-style-type: none;
+}
+.menupunkter li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menupunkter li:hover {
+    background-color: #314549;
+}
