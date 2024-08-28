@@ -5,8 +5,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="java.js"></script>
 </head>
 <body>
+    <header>
+        <h1>Pakhusets Madboder & Barer</h1>
+        <p>Hjemmelavede pitabrød. Butterchicken lavet fra bunden og krydrede samosas. Autentiske stenovnsbagte pizzaer fra en Italiensk mester. Magiske asiastiske retter fra Thailand & Vietnam.
+            Et hav af himmelske retter lavet på krydderier fra fjerne egne - såvel som lokalt fra Fyn. 
+            Ja, Storms Pakhus har meget at byde på. Gå på opdagelse i de forskellige madboder og barer herunder. God fornøjelse!</p>
+            <button>FROKOSTTILBUD</button>
+    </header>
+
+    <br>
+
+    <div class="container">
+        <!---Filter buttons-->
+        <div class="filter_buttons">
+            <button class="active" data-name="alle">ALLE</button>
+            <button data-name="drikkelse">#DRIKKELSE</button>
+            <button data-name="dansk">#DANSK</button>
+            <button data-name="italiensk">#ITALIENSK</button>
+            <button data-name="arabisk">#ARABISK</button>
+            <button data-name="vegansk">#VEGANSK</button>
+        </div>
+
+        <!--Images cards-->
+        <div class="filterable_cards">
+            <div class="card" data-name="drikkelse">
+                <img src="img/Drikkelse1.webp" alt="Vakse Viggo" />
+                <div class="card_body">
+                    <h6 class="card_title">Vakse Viggo</h6>
+                    <p class="card_text">Øl, vand og sjusser. Du kan finde det hele i Vakse Viggo midt i Storms Pakhus.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="drikkelse">
+                <img src="img/Drikkelse2.webp" alt="Vinbussen" />
+                <div class="card_body">
+                    <h6 class="card_title">Vinbussen</h6>
+                    <p class="card_text">Vinbussen er Pakhuspladsens udendørsbar – en garanti for løsningen på alle tørstige ganer. 
+                        Nyd godt af det store udvalg af Rosé, hvidvin, bobler, cocktails og øl.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="drikkelse">
+                <img src="img/Drikkelse3.webp" alt="Tak for kaf" />
+                <div class="card_body">
+                    <h6 class="card_title">Tak for kaf</h6>
+                    <p class="card_text">Tak for Kaf’ serverer kaffe af høj kvalitet med lokale kræfter bag espresso-maskinen og et smil på læben. 
+                        Hér kan du også få varm kakao og te – kort sagt: Kærlighed og koffein!</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="drikkelse">
+                <img src="img/Drikkelse4.webp" alt="Cocktailbaren" />
+                <div class="card_body">
+                    <h6 class="card_title">Cocktailbaren</h6>
+                    <p class="card_text">Pakhusets Cocktailbar. Det er her du kan opleve en række søde Tom Cruise-kloner shake en mean Mojito. 
+                        Cocktails, sodavand og alkoholfrie.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="drikkelse">
+                <img src="img/Drikkelse5.webp" alt="Ølbaren" />
+                <div class="card_body">
+                    <h6 class="card_title">Ølbaren</h6>
+                    <p class="card_text">Øl, specialøl og så lidt mere øl – prøv f.eks Pakhusets helt egen IPA!</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="drikkelse">
+                <img src="img/Drikkelse6.webp" alt="Fino Vino" />
+                <div class="card_body">
+                    <h6 class="card_title">Fino Vino</h6>
+                    <p class="card_text">Tag med på en magisk rejse ud i vinens verden, som byder på special-vine af høj kvalitet og smagfulde bobler.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="arabisk">
+                <img src="img/arabisk1.jpg" alt="Baba Ganoush" />
+                <div class="card_body">
+                    <h6 class="card_title">Baba Ganoush</h6>
+                    <p class="card_text">Lækre hjemmelavede libanesiske specialiteter</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="arabisk">
+                <img src="img/arabisk2.jpg" alt="Baba Ganoush" />
+                <div class="card_body">
+                    <h6 class="card_title">Baba Ganoush</h6>
+                    <p class="card_text">Vælg dine favoritter blandt dagens udvalg</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="arabisk">
+                <img src="img/arabisk3.jpg" alt="Baba Ganoush" />
+                <div class="card_body">
+                    <h6 class="card_title">Baba Ganoush</h6>
+                    <p class="card_text">Selvfølgelig serveret med den skønneste hjemmelavede Baba Ganoush</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="arabisk">
+                <img src="img/arabisk4.jpg" alt="Baba Ganoush" />
+                <div class="card_body">
+                    <h6 class="card_title">Baba Ganoush</h6>
+                    <p class="card_text">Snacks,vegetar,oksekød,kylling</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="arabisk">
+                <img src="img/arabisk5.jpg" alt="Baba Ganoush" />
+                <div class="card_body">
+                    <h6 class="card_title">Baba Ganoush</h6>
+                    <p class="card_text">Smag på udlandet</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="dansk">
+                <img src="img/dansk1.webp" alt="Viking" />
+                <div class="card_body">
+                    <h6 class="card_title">Viking</h6>
+                    <p class="card_text">Vælg dine favoritter blandt dagens udvalg</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="dansk">
+                <img src="img/dansk2.jpg" alt="Viking" />
+                <div class="card_body">
+                    <h6 class="card_title">Viking</h6>
+                    <p class="card_text">Fisk,æg,rugbrød kun for dig</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="dansk">
+                <img src="img/dansk3.jpg" alt="Viking" />
+                <div class="card_body">
+                    <h6 class="card_title">Viking</h6>
+                    <p class="card_text">Smag på det danske</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="dansk">
+                <img src="img/dansk4.jpg" alt="Viking" />
+                <div class="card_body">
+                    <h6 class="card_title">Viking</h6>
+                    <p class="card_text">En frikadelle?</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="dansk">
+                <img src="img/dansk5.jpg" alt="Viking" />
+                <div class="card_body">
+                    <h6 class="card_title">Viking</h6>
+                    <p class="card_text">Aldrig for lidt med rugbrød på menuen</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="italiensk">
+                <img src="img/italiensk1.webp" alt="La Rossa" />
+                <div class="card_body">
+                    <h6 class="card_title">La Rossa</h6>
+                    <p class="card_text">La Rossa tilbyder skønne italienske pizzaer</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="italiensk">
+                <img src="img/italiensk2.jpg" alt="La Rossa" />
+                <div class="card_body">
+                    <h6 class="card_title">La Rossa</h6>
+                    <p class="card_text">Alverdens nytænkende spændende fyld</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="italiensk">
+                <img src="img/italiensk3.jpg" alt="La Rossa" />
+                <div class="card_body">
+                    <h6 class="card_title">La Rossa</h6>
+                    <p class="card_text">Selvfølgelig også de helt traditionelle pizzaer</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="italiensk">
+                <img src="img/italiensk4.jpg" alt="La Rossa" />
+                <div class="card_body">
+                    <h6 class="card_title">La Rossa</h6>
+                    <p class="card_text">De er brandsvarme, sprøde, gyldne og helt fantastiske!</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="italiensk">
+                <img src="img/italiensk5.jpg" alt="La Rossa" />
+                <div class="card_body">
+                    <h6 class="card_title">La Rossa</h6>
+                    <p class="card_text">oksekød,svinekød,kylling - alverdens smage</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="vegansk">
+                <img src="img/vegansk1.webp" alt="Holy fish" />
+                <div class="card_body">
+                    <h6 class="card_title">Holy fish</h6>
+                    <p class="card_text">Don’t be shellfish, stay tuna’d for Holy Fish! Fish’n’Chips når det er bedst, sprødest og mest street.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="vegansk">
+                <img src="img/vegansk2.webp" alt="Paper Dosa" />
+                <div class="card_body">
+                    <h6 class="card_title">Paper Dosa</h6>
+                    <p class="card_text">DOSA pandekagen er lavet af ris samt linser</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="vegansk">
+                <img src="img/vegansk3.webp" alt="Umashi" />
+                <div class="card_body">
+                    <h6 class="card_title">Umashi</h6>
+                    <p class="card_text">Umashi er specialiseret i Sushi & Japas. </p>
+                </div>
+            </div>
+
+            <div class="card" data-name="vegansk">
+                <img src="img/vegansk4.webp" alt="Tandoori BBQ" />
+                <div class="card_body">
+                    <h6 class="card_title">Tandoori BBQ</h6>
+                    <p class="card_text">Barbequegrillet kød – indian style! Hos Tandoori BBQ bliver du fristet af friskbagt naanbrød og grillspyd med lam & kylling.</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="vegansk">
+                <img src="img/vegansk5.webp" alt="Masala Corner" />
+                <div class="card_body">
+                    <h6 class="card_title">Masala Corner</h6>
+                    <p class="card_text">Hos Masala Corner kan du få klassiske, autentiske indiske curries</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="vegansk">
+                <img src="img/vegansk6.webp" alt="Fuego street food" />
+                <div class="card_body">
+                    <h6 class="card_title">Fuego street food</h6>
+                    <p class="card_text">Fuego er argentinsk grill, når det er bedst</p>
+                </div>
+            </div>
+
+            <div class="card" data-name="vegansk">
+                <img src="img/vegansk7.webp" alt="Pizza Pazza" />
+                <div class="card_body">
+                    <h6 class="card_title">Pizza Pazza</h6>
+                    <p class="card_text">Sæt tænderne i ægte italienske & stenovnsbagte pizzaer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="java.js"></script>
 </body>
 </html>
