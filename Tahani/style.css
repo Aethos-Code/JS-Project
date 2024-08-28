@@ -47,7 +47,7 @@ button{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 button.active{
-    background: grey;
+    background: #b2c1b9;
     color: #fff;
 }
 .filterable_cards{
