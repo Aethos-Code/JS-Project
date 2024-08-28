@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="java.js" defer></script>
+    <title>Chatbot</title>
 </head>
 <body>
-    
+    <!-- Knap til at åbne chatbotten -->
+    <button id="åbnChatbot" class="åbn-chatbot-knap">Åbn Chatbot</button>
+
+    <div id="chatbot" class="chatbot-container">
+        <div id="lukChatbot" class="luk-chatbot-knap">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
+        </div>
+
+        <h1>Chat med os</h1>
+        <p>👋 Hej, skriv gerne til os. Vi hjælper gerne!</p>
+
+        <h2>Øjeblikkelige svar</h2>
+
+        <div class="spørgsmål-bokse">
+            <!-- Spørgsmålene vil blive genereret dynamisk af JavaScript -->
+        </div>
+
+        <div id="svar-boks" class="svar-boks">
+            <p id="svar-tekst"></p>
+            <button id="tilbage-knap" class="tilbage-knap" onclick="gåTilbageTilSpørgsmål()">Gå tilbage til spørgsmål</button>
+        </div>
+
+        <!-- Tilføj et tekstfelt og en send-knap -->
+        <div class="bruger-input">
+            <input type="text" id="bruger-spørgsmål" placeholder="Skriv dit spørgsmål her..." />
+            <button id="send-knap" onclick="håndterBrugerSpørgsmål()">Send</button>
+        </div>
+    </div>
 </body>
 </html>

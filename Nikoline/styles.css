@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.chatbot-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* skjult som standard */
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(50px);
+}
+
+.chatbot-container.vis {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.spørgsmål-bokse {
+    margin-top: 20px;
+}
+
+.spørgsmål-boks {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.spørgsmål-boks:hover {
+    background-color: #ddd;
+}
+
+.svar-boks {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7f3fe;
+    border: 1px solid #b3d4fc;
+    border-radius: 4px;
+    display: none;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #666;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.tilbage-knap {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tilbage-knap:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for brugerens input og send-knap */
+.bruger-input {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+#bruger-spørgsmål {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#send-knap {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#send-knap:hover {
+    background-color: #218838;
+}
+
+/* Knap til at åbne chatbotten */
+.åbn-chatbot-knap {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.åbn-chatbot-knap:hover {
+    background-color: #0056b3;
+}
+
+/* Knap til at åbne chatbotten */
+.åbn-chatbot-knap {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.åbn-chatbot-knap:hover {
+    background-color: #0056b3;
+}
+
+/* Sørg for, at chatbotten er over knappen */
+.chatbot-container {
+    z-index: 1001;
+}
+
+#chatToggle {
+    display: none;
+}
