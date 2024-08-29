@@ -1,45 +1,74 @@
-
 body {
-    font: 'open sans';
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
 }
-.menu {
+
+header {
     display: flex;
     justify-content: flex-end;
-    cursor: pointer;
 }
 
+
 .burger-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
     background-color: #3c555a;
-    color:  white;
-    border-radius: 5px;
+    color: white;
     width: 100px;
+    text-align: center;
+    margin: 20px 20px; /* Flytter knappen til venstre */
+    border-radius: 5px;
 }
-.menu-punkter {
+
+.menupunkter {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    visibility: hidden; /* Skjul menuen, men bevar pladsen */
+    margin: 10px 20px; /* Flytter menuen til venstre */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    opacity: 0; /* Gør menuen gennemsigtig */
+    transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0.5s; /* Tilføj animationseffekt */
+    max-height: 0; /* Skjuler elementer ved højde */
+    overflow: hidden; /* Skjuler alt uden for containeren */
 }
 
 .menupunkter.show {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
+    visibility: visible; /* Gør menuen synlig */
+    opacity: 1; /* Gør menuen ugennemsigtig */
+    max-height: 500px; /* Sæt en højde, der kan indeholde alle menupunkter */
+    background-color: #3c555a;
 }
 
 .menupunkter li {
-    padding: 30px;
+    padding: 10px;
     background-color: #3c555a;
-    list-style-type: none;
+    border-bottom: 1px solid #3c555a;
+    text-align: center; /* Centerer menupunkterne */
 }
+
 .menupunkter li a {
     color: white;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
 }
 
 .menupunkter li:hover {
     background-color: #314549;
+}
+
+.menupunkter li:last-child {
+    border-bottom: none; /* Fjern bundgrænsen fra det sidste element */
+}
+
+
+
+header ul {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
 }
