@@ -12,7 +12,7 @@ header p{
     margin-bottom: 30px;
 }
 header button{
-    background-color: #b2c1b9;
+    background-color: #3c555a;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -47,7 +47,7 @@ button{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 button.active{
-    background: #b2c1b9;
+    background: #3c555a;
     color: #fff;
 }
 .filterable_cards{
