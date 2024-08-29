@@ -17,7 +17,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
-  padding: 2rem;
+  padding: 5rem;
   width: 25vw;
   height: 25vw;
   background-color: #fafaf2;
@@ -29,7 +29,7 @@
 
 .modal-header {
   align-self: center;
-  font-size: 45px;
+  font-size: 2vw;
   font-weight: bold;
 }
 
@@ -37,7 +37,6 @@
   display: flex;
   justify-content: center;
   column-gap: 50px;
-  margin-top: 35px;
 }
 
 .modal-forms {
@@ -53,6 +52,7 @@
 
 .modal-hours p {
   margin: 10px;
+  font-size: 0.8vw;
 }
 
 .group {
