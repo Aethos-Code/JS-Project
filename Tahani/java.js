@@ -1,5 +1,3 @@
-
-
 const filterButtons = document.querySelectorAll(".filter_buttons button");
 const filterableCards = document.querySelectorAll(".filterable_cards .card");
 
@@ -32,11 +30,6 @@ images.forEach((imag) => {
 
 // log imagesources array til konsollen for at verficere indholdet
 console.log(imageSources);
-
-
-
-
-
 
 
 

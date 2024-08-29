@@ -73,6 +73,7 @@ button.active{
     object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
+
 .card_body{
     padding: 15px 20px 20px;
 }
