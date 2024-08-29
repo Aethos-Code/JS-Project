@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="chat.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Liste over menupunkter, som vil blive udfyldt af JavaScript -->
+        <ul id="menupunkter" class="menupunkter">
+            <!--Menu punkter bliver tilføjet her dynamisk-->
+        </ul>
+        <!-- Hamburger menu-knap -->
+        <div id="burger-menu" class="burger-menu">
+            &#9776;
+        </div>
+        <script src="header.js"></script>
+    </header>
+
+    <div class="main">
+        <img src="images/fuego-main.jpg" id="img-main">
+        <div class="segment1">
+            <h1>FUEGO STREET FOOD</h1>
+            <div class="content1">
+                <p>Fuego er argentinsk grill, når det er bedst. Bedst til ild går jo som bekendt kød – og netop kvalitetskød bliver omdrejningspunktet for madoplevelsen hos Fuego. En symbiose mellem kød og kul. Hos Fuego handler det om den perfekte symbiose mellem kød og kul, en tradition som går dybt i den argentinske sjæl. Forestil dig store, saftige “Pepito” steak sandwiches med grillet Black Angus steak, sprød salat og chimichurri, der får mundvandet til at løbe. “hej, bare den store tallerken med kød, tak”.</p>
+                <div class="attribute">
+                    <p>Kategori: Argentinsk</p>
+                    <p>Instagram: </p>
+                    <p>Rapport: Se Kontrol Rapport</p>
+                </div>
+            </div>
+            <h3>FUEGO STREET FOOD TILBYDER #GLUTENFRI #VEGANSK #VEGATARISK</h3>
+        </div>
+
+        <div class="segment2">
+            <div><img src="images/fuego-profile.jpg"></div>
+            <div class="content2">
+                <h2>ARGENTINSK GRILL</h2>
+                <p>Den lokale argentinske madkultur er bygget op om “ASADO” – det åbne ildsted og grillen som et socialt samlingspunkt. Fuego har for længst mestret denne kunst og teknik. I røg og damp Bag grillen står Nico, med den fornemme opgave, at bringe argentinsk madkultur et skridt tættere danskerne, en Pepito ad gangen. Konceptet hænger uløseligt sammen med en forestilling om venner, vino og kolde øl. Her ku’ man jo godt være fræk og sige, at Storms Pakhus derfor var oplagt.</p>
+                <h2>BLACK ANGUS BEEF OG HJEMMELAVET CHORIZO</h2>
+                <p>Kødet er langtidsgrillet ud fra traditionelle principper, hvor grillens røg og varme omslutter hver bid, og giver kødet en uovertruffen smag og mørhed. Et af Fuego-menuens højdepunkter er deres Pepito – En type asado sandwich fyldt med grillet Black Angus steak, chimichurri, chili-mayo og en sprød salat. Fuego ved at sådan en sag er svær ikke at elske, og de tilbyder den derfor i både ½ og 1 ft. Men det stopper ikke der! Er du mindre til steak og mere til pølse, kan du også mæske dig i en Chori med hjemmelavet grillet chorizopølse, chimihurri og chili-mayo.</p>
+                <h2>KØD & SIDES</h2>
+                <p>Fuego tilbyder desuden Asado Platter, hvor store kødelskere kan få stillet deres sult i tre forskellige varianter. Fuego laver foruden deres egne pølser, empanadas, dressinger og chimichurri. Asado er en fest for sanserne, hvor saftige stykker kød tilberedes langsomt over flammerne, og den aromatiske duft fylder luften. Fuego Street Food bringer denne autentiske oplevelse til dig med hver eneste bid.</p>
+            </div>
+        </div>
+
+
+        <div class="module">
+            <h1 id="title">Vores Mad</h1>
+            <div class="caro-container">
+            <svg id="btnL" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e8eaed"><path d="m432-480 156 156q11 11 11 28t-11 28q-11 11-28 11t-28-11L348-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 28-11t28 11q11 11 11 28t-11 28L432-480Z"/></svg>
+            <div id="carousel" class="caracara"></div>
+            <svg id="btnR" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e8eaed"><path d="M504-480 348-636q-11-11-11-28t11-28q11-11 28-11t28 11l184 184q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L404-268q-11 11-28 11t-28-11q-11-11-11-28t11-28l156-156Z"/></svg>
+        </div>
+        </div>
+        
+        <div class="btn-container">        
+        <button id="open-modal" class="open-modal">Bestil Bord</button>
+        </div>
+
+
+
+    </div>
+    <div id="modal" class="modal">
+        <svg id="closeBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <div class="modal-header">Reservation</div>
+        <div class="modal-content">
+            <div class="modal-forms">
+                <div class="group">
+                    <label for="name">Navn</label>
+                    <input type="text" id="name" name="name" required placeholder="Jens Jensen" class="contact-input">
+                    </div>
+              
+                    <div class="group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="jens.jensen@gmail.com" class="contact-input">
+                    </div>
+              
+                    <div class="group">
+                    <label for="message">Hvor mange kommer?</label>
+                    <textarea id="message" name="message" placeholder="Fem personer....." required class="contact-input" rows="8"></textarea>
+                    </div>
+                    
+                    <div class="group">
+                    <input type="submit" class="submit">
+                    </div>
+            </div>
+            <div id="modal-hours" class="modal-hours"></div>
+        </div>
+    </div>
+
+
+
+<!-- (Nikoline) Knap til at åbne chatbotten -->
+<button id="åbnChatbot" class="åbn-chatbot-knap">Åbn Chatbot</button>
+
+<div id="chatbot" class="chatbot-container">
+    <div id="lukChatbot" class="luk-chatbot-knap">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+    </div>
+
+    <h1>Chat med os</h1>
+    <p>👋 Hej, skriv gerne til os. Vi hjælper gerne!</p>
+
+    <h2>Øjeblikkelige svar</h2>
+
+    <div class="spørgsmål-bokse">
+        <!-- Spørgsmålene vil blive genereret dynamisk af JavaScript -->
+    </div>
+
+    <div id="svar-boks" class="svar-boks">
+        <p id="svar-tekst"></p>
+        <button id="tilbage-knap" class="tilbage-knap" onclick="gåTilbageTilSpørgsmål()">Gå tilbage til spørgsmål</button>
+    </div>
+
+    <!-- Tilføj et tekstfelt og en send-knap -->
+    <div class="bruger-input">
+        <input type="text" id="bruger-spørgsmål" placeholder="Skriv dit spørgsmål her..." />
+        <button id="send-knap" onclick="håndterBrugerSpørgsmål()">Send</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <div id="overlay" class="overlay"></div>
+
+
+
+    <script defer src="carousel.js"></script>
+    <script defer src="modal.js"></script>
+</body>
+</html>
