@@ -1,8 +1,7 @@
-
 var i = 0;
 
 
-const images = ['fuego1.jpg', 'fuego2.jpg', 'fuego3.jpg']
+const images = ['images/fuego1.jpg', 'images/fuego2.jpg', 'images/fuego3.jpg']
 
 
 const caro = document.getElementById('carousel');
@@ -10,7 +9,7 @@ const caro = document.getElementById('carousel');
 const img = document.createElement('img');
 
 img.src = images[i];
-img.width = 500;
+img.style.width = '100%';
 caro.appendChild(img);
 
 
@@ -49,8 +48,3 @@ rightBtn.addEventListener('click', () => {
     console.log(i)
   }
 });
-
-
-
-
-

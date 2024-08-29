@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
 </head>
 <body>
     <div class="main">
@@ -33,16 +34,55 @@
                 <p>Fuego tilbyder desuden Asado Platter, hvor store kødelskere kan få stillet deres sult i tre forskellige varianter. Fuego laver foruden deres egne pølser, empanadas, dressinger og chimichurri. Asado er en fest for sanserne, hvor saftige stykker kød tilberedes langsomt over flammerne, og den aromatiske duft fylder luften. Fuego Street Food bringer denne autentiske oplevelse til dig med hver eneste bid.</p>
             </div>
         </div>
-        <div class="gallery">
-            <h1>Vores Mad</h1>
-            <img name="slide" width="400" height="400">
+
+
+        <div class="module">
+            <h1 id="title">Vores Mad</h1>
+            <div class="caro-container">
+            <svg id="btnL" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e8eaed"><path d="m432-480 156 156q11 11 11 28t-11 28q-11 11-28 11t-28-11L348-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 28-11t28 11q11 11 11 28t-11 28L432-480Z"/></svg>
+            <div id="carousel" class="caracara"></div>
+            <svg id="btnR" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e8eaed"><path d="M504-480 348-636q-11-11-11-28t11-28q11-11 28-11t28 11l184 184q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L404-268q-11 11-28 11t-28-11q-11-11-11-28t11-28l156-156Z"/></svg>
+        </div>
+        </div>
+        
+        <div class="btn-container">        
+        <button id="open-modal" class="open-modal">Bestil Bord</button>
+        </div>
+
+
+
+    </div>
+    <div id="modal" class="modal">
+        <svg id="closeBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <div class="modal-header">Reservation</div>
+        <div class="modal-content">
+            <div class="modal-forms">
+                <div class="group">
+                    <label for="name">Navn</label>
+                    <input type="text" id="name" name="name" required placeholder="Jens Jensen" class="contact-input">
+                    </div>
+              
+                    <div class="group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="jens.jensen@gmail.com" class="contact-input">
+                    </div>
+              
+                    <div class="group">
+                    <label for="message">Hvor mange kommer?</label>
+                    <textarea id="message" name="message" placeholder="Fem personer....." required class="contact-input" rows="8"></textarea>
+                    </div>
+                    
+                    <div class="group">
+                    <input type="submit" class="submit">
+                    </div>
+            </div>
+            <div id="modal-hours" class="modal-hours"></div>
         </div>
     </div>
 
 
-
-
-
-    <script src="java.js"></script>
+    <div id="overlay" class="overlay"></div>
+    <script defer src="carousel.js"></script>
+    <script defer src="modal.js"></script>
 </body>
 </html>
